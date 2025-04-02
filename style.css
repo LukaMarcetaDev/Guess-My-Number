@@ -118,36 +118,71 @@ h1 {
   margin-bottom: 2rem;
 }
 
-@media (max-width: 768px) {
+/* Dodaj ove media query sekcije na kraj postojećeg CSS-a */
+
+@media (max-width: 730px) {
+  html {
+    font-size: 85%;
+  }
+
   header {
-    height: 30vh;
+    height: 40vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    position: static;
+    transform: none;
+    margin-top: 3rem;
+  }
+
+  .again {
+    position: static;
+    order: 1;
+    margin-bottom: 1rem;
+  }
+
+  .between {
+    position: static;
+    margin-top: 1rem;
+  }
+
+  .number {
+    position: relative;
+    transform: none;
+    left: auto;
+    margin: 2rem 0;
   }
 
   main {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: auto;
-    padding: 2rem;
+    flex-direction: column;
+    padding: 3rem 2rem;
   }
 
   .left,
   .right {
-    width: 90%;
-    margin-bottom: 2rem;
+    width: 100%;
+    text-align: center;
   }
 
-  h1 {
-    font-size: 3rem;
+  .right {
+    margin-top: 4rem;
+    font-size: 1.6rem;
+  }
+
+  .message {
+    margin-bottom: 4rem;
   }
 
   .guess {
-    width: 80%;
     font-size: 4rem;
-  }
-
-  .btn {
-    padding: 1.5rem 2rem;
-    font-size: 1.8rem;
+    width: 20rem;
+    padding: 1.5rem;
   }
 }
