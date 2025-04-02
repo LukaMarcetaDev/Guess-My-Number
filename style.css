@@ -122,16 +122,17 @@ h1 {
 
 @media (max-width: 730px) {
   html {
-    font-size: 85%;
+    font-size: 60%;
   }
 
   header {
     height: 40vh;
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border-bottom: none;
   }
 
   h1 {
@@ -163,6 +164,7 @@ h1 {
     height: auto;
     flex-direction: column;
     padding: 3rem 2rem;
+    border-top: 7px solid #eee;
   }
 
   .left,
